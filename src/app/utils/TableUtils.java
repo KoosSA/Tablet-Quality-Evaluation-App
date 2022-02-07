@@ -31,5 +31,18 @@ public class TableUtils {
 			}
 		}
 	}
+	
+	public static DefaultTableModel getTableModel(JTable table) {
+		return (DefaultTableModel) table.getModel();
+	}
+	
+	public static void setRowCount(DefaultTableModel tableModel, int numRows) {
+		tableModel.setRowCount(numRows);
+	}
+	
+	public static void setColumnCount(DefaultTableModel tableModel, int numColumns) {
+		tableModel.setColumnCount(numColumns);
+		
+	}
 
 }
